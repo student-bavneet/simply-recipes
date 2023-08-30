@@ -1,0 +1,480 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-weight: 100;
+
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration:none;
+}
+
+/* index.html */
+header
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top:3px solid #b08dad;
+    align-items:center;
+    padding:20px 0;
+    background-color:white;
+    /* position:sticky; */
+    /* top:0; */
+}
+#link ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding-left: 2em;
+    
+}
+#link ul li a
+{
+    position:relative;
+}
+
+#link ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #b08dad;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -30px;
+    transition: 0.3s;
+}
+#link ul li a:hover:after{
+    width: 100%;
+} 
+header a{
+    color:#d7bbd2;
+}
+#contact a{
+    background-color:#d7bbd2;
+    color:white;
+    font-size:10px;
+    letter-spacing: 1px;
+    /* text-align: center; */
+    padding:12px;
+      
+}
+header{
+    color: #b08dad;  
+}
+
+.main
+{
+    height: 87vh;
+    background: linear-gradient(to bottom,#c9adc6 49%, #d7bbd2 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.recipes
+{
+    width:80%;
+    margin:1em auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.recipes .r{
+    width:330px;
+    margin-bottom:1em;
+}
+.recipes .r .r1{
+    background-color: #c9adc6;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    line-height: 4vh;
+    letter-spacing: 1px;
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+footer{
+    background-color: #b08dad;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 3em;
+    
+    width:100%;
+}
+
+
+/* about.html */
+.main2
+{
+    height: 87vh;
+    background: linear-gradient(to bottom,#c9adc6 49%, #d7bbd2 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+#content{
+    width: 85%;
+    height: 450px;
+    display: flex;
+}
+.title{
+    background-color: #b08dad;
+    color:white;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.title h2{
+    margin-bottom: .5em;
+}
+.title p{
+    line-height: 3vh;
+    font-size: 14px;
+    margin-bottom: .5em;
+}
+.title a{
+    background-color:#d7bbd2;
+    margin-top:.5em;
+    color:white;
+    font-size:10px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding:12px 0;
+}
+
+#look
+{
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* tags.html */
+.tags
+{
+    width:80%;
+    margin:3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.tags .r
+{
+    width:300px;
+    background-color: white;
+    text-align: center;
+    padding:10px;
+    
+}
+.tags .r a{
+    color:black;
+}
+.tags .r p{
+    font-size:12px;
+}
+
+/* contact.html */
+.contact{
+    padding: 3em 0;
+    width:80%;
+    display:flex;
+    margin: auto;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact .para h1{
+    margin-bottom:1em;
+}
+.contact .para p{
+    margin-bottom:1em;
+    line-height:4vh;
+    font-size:15px;
+}
+.contact form{
+    background-color:white;
+    padding:40px 30px;
+}
+.contact form label{
+    font-weight:500;
+}
+.contact form input{
+    width:400px;
+    height:30px;
+    border:none;
+    background-color:#f3f3f3;
+}
+.contact form textarea{
+    width:400px;
+    border:none;
+    background-color:#f3f3f3;
+}
+#con{
+    background-color:#d7bbd2;
+    color:white;
+    letter-spacing: 1px;
+}
+
+
+
+/* beef.html */
+#tags
+{
+    width:80%;
+    margin:2em auto 0em auto;
+    padding-left: .3em;
+    font-weight: 500;
+}
+
+
+/* view-recipe.html */
+
+.view
+{
+    width: 80%;
+    margin:auto;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding:50px 0;
+}
+.box .img{
+    width:50%;
+}
+.box .intro{
+    width:50%;
+}
+.intro h1{
+    font-weight:400;
+    font-size:35px;
+}
+.intro>p{
+    font-size:14px;
+    line-height:4vh;
+}
+.cook{
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    margin:1.5em 0;
+    line-height:2.8vh;
+}
+.cook i{
+    color:#b08dad;
+}
+.cook p{
+    font-size:13px;
+    font-weight:400;
+}
+.cook small{
+    font-size:13px;
+}
+.tag-list
+{
+    display:flex;
+    align-items:center;
+}
+.tag-list p{
+    font-size:13px;
+    font-weight:400;
+}
+.tag-list ul li
+{
+    list-style:none;
+    display:inline-block;
+    padding:3px 6px;
+    border-radius:3px;
+    background:#b08dad;
+    color:white;
+    font-size:12px;
+}
+.ins{
+    display:flex;
+    gap:30px;
+}
+.ins h3{
+    font-weight:400;
+    margin-bottom:1em;
+}
+.ins .m1{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+.ins h3{ 
+    font-size:25px;
+}
+.method{
+    background-color: white;
+    font-size:13px;
+    padding:25px;
+    width:75%;
+}
+.method h4{
+    color:#b08dad;
+    font-weight:500;
+}
+.method p{
+    line-height:3vh;
+    margin:1em 0;
+}
+.ing{
+    background-color: white;
+    font-size:13px;
+    padding:25px;
+    width:25%;
+}
+.ing ul li{
+    list-style:none;
+    line-height:7vh;
+}
+
+
+
+
+/* image-overlay */
+
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 180px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .middle a {
+    background-color: #b08dad;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+
+
+@media screen and (max-width:850px)
+{
+    header
+    {
+        gap:20px;
+    }
+    .view
+    {
+        width: 100%;
+        margin:0;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box .img{
+        width:80%;
+    }
+    .box .intro{
+        width:80%;
+    }
+    .ins{
+        flex-direction: column;
+        align-items:center;
+    }
+    .method{
+        width:80%;
+    }
+    .ing{
+        width:80%;
+    } 
+    .main2
+    {
+        height: 110vh;
+        align-items: start;
+        padding:50px;
+    }
+    #content{
+        width: 70%;
+        height: 250px;
+        display: flex;
+        flex-direction:column;
+    }
+    .contact{
+        flex-direction:column;
+        gap:30px;
+    }
+    .contact form input{
+        width:500px;
+        
+    }
+    .contact form textarea{
+        width:500px;
+       
+    }
+}
+@media screen and (max-width:600px)
+{
+    .contact form input{
+        width:400px;
+        
+    }
+    .contact form textarea{
+        width:400px;
+       
+    }
+}
+@media screen and (max-width:500px)
+{
+    .main2
+    {
+        padding:30px;
+    }
+    #content{
+        width: 90%;
+    }
+    .contact form input{
+        width:100%;
+        
+    }
+    .contact form textarea{
+        width:100%;
+       
+    }
+    
+}
+
+
+     

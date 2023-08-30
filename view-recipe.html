@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simply recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../font/css/solid.css">
+    <link rel="stylesheet" href="../font/css/fontawesome.css">
+    <style>
+        /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  width:100%;
+  height: 70px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.tab-img {
+  position: relative;
+  /* display: none; */
+}
+.tab-img img{
+    height:300px;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body bgcolor="#f3f3f3">
+
+    <!-- header -->
+
+    <header>
+        <div id="logo">
+            <h1>Simply Recipe</h1>
+        </div>
+        <nav id="link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tags.html">Tags</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+            </ul>
+        </nav>
+        <div id="contact">
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- view recipe section -->
+
+    <section class="view">
+
+
+        <main class="box">
+
+            <div class="img">
+                <div class="tab-img">
+                    <img id="expandedImg" style="width:100%" src="img/7.jpg">
+                  </div>
+                  
+                  <div class="row">
+                    <div class="column">
+                      <img src="img/7.jpg" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="img/8.jpg" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="img/9.jpg" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="img/10.jpg" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                  </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="intro">
+                <h1>Banana Pancakes</h1>
+                <br/>
+                <p>Fluffy on the inside, crispy on the outside, and delicately flavored with bananas and vanilla - these are phenomenal banana pancakes. The recipe, believe it or not, is adapted from a Williams Sonoma children's cookbook, which only proves how easy they are to make. I love them with a simple drizzle of many syrup, but if you wnat to dress them up and hint at what's inside, top them with fresh sliced bananas and a dusting confectioners' sugar.</p>
+                <div class="cook">
+                    <div class="c1">
+                        <i class="fa fa-user-clock"></i>
+                        <p>Prep Time</p>
+                        <small>30 min.</small>
+                    </div>
+                    <div class="c1">
+                        <i class="fa fa-clock"></i>
+                        <p>Cook Time</p>
+                        <small>15 min.</small>
+                    </div>
+                    <div class="c1">
+                        <i class="fa fa-users"></i>
+                        <p>Serving</p>
+                        <small>6 servings</small>
+                    </div>
+                </div>
+                <div class="tag-list">
+                    <p>Tags : &nbsp;</p>
+                    <ul>
+                        <li>Beef</li>
+                        <li>Breakfast</li>
+                        <li>Pancakes</li>
+                        <li>Food</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+        <main class="ins">
+            <div class="method">
+                <h3>Method</h3>
+                <div class="m1">
+                    <h4>STEP&nbsp;1</h4>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                </div>
+                <p>Sieve the flour, baking powder and a generous pinch of salt into a large bowl, mash the very ripe bananas awih a fork until smooth, then whisk in the eggs, vanilla extract and milk. Make a well in the centre of the dry ingredients, tip in the wet ingredients and swiftly whisk together to create a smooth, silky batter.</p>
+                <div class="m1">
+                    <h4>STEP&nbsp;2</h4>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                </div>
+                <p>Heat a little knob of butter in a large non-stick pan over a medium heat. Add 2-3 tbsp of the batter to the pan and cook for several minutes, or until small bubbles start appearing on the surface. Flip the pancake over and cook 1-2 mins on the other side. Repeat with the remaining batter, keeping the pancakes warm in a low oven.</p>
+                <div class="m1">
+                    <h4>STEP&nbsp;3</h4>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                </div>
+                <p>Stack the pancakes on plates and top with the banana slices, a glug of sticky maple syrup and a handful of pecan nts, if you like.</p>
+            </div>
+            <div class="ing">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>350g self-raising flour</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>1 tsp baking powder</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>2 very ripe bananas</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>2 medium eggs</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>1 tsp vanilla extract</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>250ml whole milk</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                    <li>butter, for frying</li>
+                    <hr width="90%" size="2" color="#e5e3e6">
+                </ul>
+            </div>
+        </main>
+    </section>
+
+    
+
+    <!-- footer -->
+    <footer>
+        <p>copyright &copy; 2023 simply recipes</p>
+    </footer>
+    
+
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          expandImg.src = imgs.src;
+        }
+        </script>
+
+
+</body>
+</html>
